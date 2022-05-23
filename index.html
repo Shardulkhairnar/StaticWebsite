@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <title>"Happy Holiday" </title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Belleza&family=Belleza&family=Nothing+You+Could+Do&display=swap');
+        </style>
+    </head>
+
+    
+    
+    <body>   
+        
+        <nav style="font-family: Aclonica, serif">    
+             <ul class="NavLeft" id="dropdownclick">
+                    <li><a href="Home">Home</a></li>
+                    <li><a href="Destinations">Destinations</a></li>
+                    <li><a href="AboutUs">About Us</a></li>
+                    <li><a href="ContactUs">Contact Us</a></li>
+                    <li class="NavRight"><a href="Register">Register</a></li>
+                    <li class="NavRight"><a href="SignIn">Sign In</a></li>
+                    <li class="dropdownicon"><a href="javascript:void(0)" onclick="dropdown()">&#9776;</a></li>
+             </ul>
+         </nav>
+        
+        
+        
+        <div class="Background" id="Home">
+            <img src="background.jpg" width =100%> 
+            <h1 class="Name">Happy Holiday</h1>
+            <h1 class="tagline">Choose your Holiday destination</h1>           
+        </div>
+        
+        
+        
+        <div class="destinations" id="destinations" >
+            
+            <h1 style="margin-top:0.3%;margin-bottom: 0.5%"><b>Our Top Recommendations</b> </h1>
+            
+            <div class="row" style="background-color: #AFEEEE;">
+                
+              <div class="col-4"> 
+                <h2>Rajasthan</h2>
+                  <div class="icon">
+                    <img src="rajasthan.jpg" width=100%>
+                  </div>
+                 <p> Rajasthan is not just about forts and palaces but it also has a beautiful culture, amazing food, silver jewels and more. It is the kind of destination that combines adventure and relaxation and makes for an unforgettable holiday..</p> 
+                  <button onclick="document.location =">Book Now</button>
+              </div>
+                
+                
+              <div class="col-4">
+                <h2>Gujrat</h2>
+                  <div class="icon">
+                <img src="gujrat.jpg" width=100%>
+                      </div>
+                  <p>Gujrat is renowned for its beaches, temple towns and historic capitals. Wildlife sanctuaries, hill resorts and natural grandeur are gifts of Gujarat. Sculpture, handicrafts, arts, festivals also make the state rich.</p>
+                  <button onclick="document.location =">Book Now</button>
+              </div>
+                
+                
+              <div class="col-4">
+                <h2>Punjab</h2>
+                  <div class="icon">
+                    <img src="punjab.jpg" width=100%>
+                 </div>
+                  <p>Punjab is known for numerous reasons. It is known as 'The land of five rivers' and because of the fertile lands found here, it is also amongst one of the most ancient civilizations in the world. This place is rich with culture and full of beauty that you should experience first-hand.</p>
+                  <button onclick="document.location =">Book Now</button>
+              </div>
+            </div>  
+        </div>
+        
+        <div class="AboutUs">
+           <h1 ><b>About Us</b></h1>
+            <p>We are passionate about travel and sharing the India's wonders on the leisure travel side, and providing corporate travelers hi-touch services to facilitate their business travel needs. We’re an employee-owned travel agency anchored by our values, integrity and dedication to customer service.</p>
+        </div>
+        
+        <div class="ContactUs" >
+            <h1 ><b>Contact Us</b></h1>
+            <div style="background-color:#E0FFFF ">
+            <p >Company Name : Happy Holiday</p>
+            <p>Email : happy.holiday@gmail.com</p>
+            <p>Phone Number : 0253-4455660</p>
+            <p>Address : 4, XYZ, Near ABC Chowk, PQR Road, Pune, Maharashtra, India.</p>
+            </div>
+        </div>
+        
+        
+           
+    <script>
+        function dropdown()  
+          {
+            var x=document.getElementById("dropdownclick");
+            if (x.className === "NavLeft")
+            {
+                x.className += " responsive";
+            }    
+            else
+            {
+                x.className = "NavLeft";
+            }
+          } 
+    </script> 
+   
+        
+    </body>
+    
+</html>

@@ -1,0 +1,258 @@
+/*#################### Default ####################*/
+
+nav,header,footer{
+    display: block;
+}
+
+
+body{
+    background-color: white;
+    line-height: 1;
+    margin: 0;
+    width: 100%;
+}
+
+.destination{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content:"";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* ################## Navigation Bar ###################*/
+
+nav{
+    width: 100%;
+    margin: 0;
+    
+}
+
+nav ul{
+    background-color: #000066;
+    overflow: hidden;
+    margin: 0;
+    padding: 15px;
+}
+
+nav ul.NavLeft li{
+    list-style: none;
+    float: left;
+}
+
+ nav ul.NavLeft li.NavRight{
+    float: right;
+}
+
+nav ul li a{
+    text-decoration: none;
+    min-height: 20 px;
+    padding: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: #000066;
+}
+
+nav ul li.dropdownicon{
+    display: none;
+}
+
+
+/*################### Logo and Tagline ####################*/
+
+h1.Name{
+    color: white;
+    font-family: "Aclonica","serif";
+    font-size: 50px;
+    margin: 1%;
+    margin-bottom: 5%;
+    line-height: 60px;
+    position:absolute;
+    top: 70px;
+    left: 50px;
+}
+
+h1.tagline{
+    color: white;
+    font-family: "Nothing You Could Do","serif";
+    font-size: 25px;
+    margin: 1%;
+    position: absolute;
+    top: 145px;
+    left: 80px;
+}
+
+.background{
+    position: relative;
+}
+
+/*###################### Destination ########################*/
+
+div.destinations h1{
+    font-family:"Belleza","serif";
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin: 1%;
+    padding: 0;
+}
+
+div.col-4  {
+    border: 8px solid white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1.5%;
+    display: inline;
+}
+div.icon img{
+    height: 300px;
+    width: 500px;
+    max-width: 100%; 
+}
+
+div.col-4 h2{
+    font-family: "Belleza", "serif";
+    font-size: 30px;
+    margin:0.5%;
+    padding: 0;
+    margin-bottom: 15px;
+}
+div.col-4 p{
+    font-family: "Belleza", "serif";
+    font-size: 18px;
+}
+
+/*###################### Form #########################*/
+form h2{
+    font-family:"Belleza","serif";
+    font-size: 16px;
+    color: black;  
+}
+
+form h2.username {
+    margin-top: 5%;
+}
+
+form h2.password {
+    margin-bottom: 5%;
+}
+
+input[type="text"]{
+   margin-left: 1%;
+    width: 250px;
+    min-width: 100px;
+}
+
+div.leftside{
+    margin-left: 30%;
+}
+
+/*############### About Us ##################*/
+div.AboutUs h1{
+    font-family: "Belleza","serif";
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    margin: 1%;
+    padding: 0;
+}
+
+div.AboutUs p{
+    font-family: "Belleza","serif"; 
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    margin-left: 1%;
+}
+
+/*############## Contact Us ################*/
+
+div.ContactUs h1{
+    font-family: "Belleza","serif";
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    margin: 1%;
+    padding: 0;
+}
+
+div.ContactUs p{
+    font-family: "Belleza","serif";
+    width: 100%;
+    font-size: 22px;
+    margin-left: 1%;
+}
+
+/* ########## For making Navigation Bar Mobile compatible ############*/
+
+@media screen and (max-width:680px)
+{
+   nav ul.NavLeft li:not(:nth-child(1)){
+        display: none;
+    }
+    
+   nav ul.NavLeft li.dropdownicon{
+        display: block;
+        float: right;
+        }
+    nav ul.NavLeft.responsive li.dropdownicon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+   nav ul.NavLeft.responsive{
+        position : relative;
+    }
+
+   nav ul.NavLeft.responsive li{
+        display:inline;
+        float: none;
+       font-size: 11px;
+       
+    }
+
+   nav ul.NavLeft.responsive li a{
+       
+        display:inline;
+        text-align: left;
+        font-size: 12px;
+        min-height: 5 px;
+        padding: 6px;
+       
+    }
+}
+
